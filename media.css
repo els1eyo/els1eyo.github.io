@@ -1,0 +1,117 @@
+:root {
+    --darkgreen: #1a472a;
+    --green: #2a623d;
+    --grey: #5d5d5d;
+    --silver: #aaaaaa;
+    --darkgrey: #292929;
+    --red: #d93025;
+  }
+
+@media screen and (max-width: 768px) {
+  /* navigation */
+  
+  .navmenu {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    background-color: #000;
+    display: none;
+    padding-right: 0;
+  }
+
+  .logo{
+    max-width: 160px;
+    left: 30px;
+  }
+
+  .navmenu li {
+    margin-right: 0;
+    float: none;
+    padding: 10px;
+    flex-grow: 1;
+    color: var(--silver);
+    text-align: center;
+  }
+
+  .navmenu li:hover {
+    background-color: var(--darkgreen);
+  }
+
+  .navmenu a:hover {
+    color: var(--silver);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .close-icon {
+    visibility: hidden;
+  }
+
+  .navmenu.active {
+    display: block;
+  }
+
+  .switch-icon {
+    color: var(--green);
+    font-size: 30px;
+    padding-right: 30px;
+  }
+
+  /* malfoy manor section */
+
+  .manor-container,
+  .darkarts-container,
+  .about-container,
+  footer{
+    height: auto;
+  }
+
+  .manor-photos-wrapper{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .manor-photos-wrapper .photo{
+    width: calc(100vw - 100px);
+  }
+
+  .manor-photos-wrapper .photo img:hover{
+    transform: none;
+  }
+
+  /* about dark mark section */
+
+  .about-wrapper{
+    flex-direction: column;
+  }
+
+  .about-wrapper p{
+    width: calc(100vw - 100px);
+  }
+
+  .mark-photo{
+    width: 50vw;
+    height: auto;
+  }
+
+  .mark-photo img:hover{
+    transform: none;
+  }
+
+  .up-icon{
+    font-size: 40px;
+    bottom: 20px;
+  }
+
+  footer{
+    gap: 0;
+    padding: 5px 0;
+  }
+
+  footer .quote{
+    font-size: 18px;
+  }
+}

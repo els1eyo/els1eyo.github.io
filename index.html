@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Lenka Chládková -->
+  <!-- lolislava.lb@gmail.com -->
+  <!-- Discord: els1_eyo -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Dark Mark</title>
+  </head>
+  <body>
+
+    <!-- navigation, header -->
+    <nav class="navbar">
+      <a href="#"><div class="logo">
+        <img src="./img/darkmarklogo.png" alt="" />
+      </div></a>
+      <i class="bx bx-toggle-left switch-icon" id="switch"></i>
+      <div class="navmenu">
+        <ul>
+          <li><a href="#registration">Registration</a></li>
+          <li><a href="#malfoyManor">Malfoy Manor</a></li>
+          <li><a href="#darkArts">Dark Arts</a></li>
+          <li><a href="#aboutDarkMark">About Dark Mark</a></li>
+        </ul>
+      </div>
+      <div class="menu-toggle">
+        <i class="bx bx-menu hamburger"></i>
+        <i class="bx bx-x close-icon"></i>
+      </div>
+    </nav>
+
+    <header class="header"></header>
+
+    <!-- sign up form -->
+
+    <div class="form-container" id="registration">
+      <div class="form" id="sign-form">
+        <h2>Registration</h2>
+        <div class="input-field" id="user-input">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+          />
+          <i class="bx bx-user user-icon"></i>
+        </div>
+        <div class="error" id="user-error">
+          <span class="error-message">Error message for username</span>
+        </div>
+
+        <div class="input-field" id="email-input">
+          <input type="email" name="email" id="email" placeholder="E-mail" />
+          <i class="bx bx-envelope email-icon"></i>
+        </div>
+        <div class="error" id="email-error">
+          <span class="error-message">Error message for email</span>
+        </div>
+
+        <div class="input-field" id="pass-input">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <i class="bx bx-hide password-icon"></i>
+        </div>
+        <div class="error" id="pass-error">
+          <span class="error-message">Error message for password</span>
+        </div>
+
+        <div class="input-field" id="confirm-pass-input">
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            placeholder="Confirm Password"
+          />
+          <i class="bx bx-hide password-icon"></i>
+        </div>
+        <div class="error" id="confirm-pass-error">
+          <span class="error-message">Error message for confirm password</span>
+        </div>
+
+        <button type="submit" id="submitButton">Register</button>
+      </div>
+    </div>
+
+    <!-- malfoy manor section -->
+
+    <div class="manor-container" id="malfoyManor">
+      <div class="text-wrapper">
+        <h1>Malfoy Manor</h1>
+        <p>Following Harry Potter's survival of his duel with the Dark Lord after the latter returned to power and prior to his arrest after the Battle of the Department of Mysteries, Lucius would hold meetings with his fellow Death Eaters over the summer at his home. During these meetings, they discussed the Rebirth of Lord Voldemort, Harry Potter's survival of the duel with the Dark Lord, and the likely explanations for the odd reactions of their wands. However, Lucius' son Draco would grow increasingly (and secretly) envious of his school rival for being discussed seriously as an adversary, whereas he himself was still seen as a mere schoolboy by Death Eaters who met at his parents’ house. <br><br>
+
+        By the summer of 1997, Lucius Malfoy and many other Death Eaters had escaped Azkaban prison, and the Dark Lord had made the Malfoys' home his headquarters, replacing the Riddle House in Little Hangleton. While the Malfoys were very uncomfortable with this, Bellatrix Lestrange, Lucius's sister-in-law, who also resided there, claimed there could be "no higher pleasure" than having Lord Voldemort stay with them. Delphini, the daughter of The Dark Lord and Bellatrix, reported that she was born at the Manor.</p>
+      </div>
+
+      <div class="manor-photos-wrapper">
+        <div class="photo">
+          <img src="./img/mmoutside.png" alt="">
+        </div>
+        <div class="photo">
+          <img src="./img/mmhall.png" alt="">
+        </div>
+        <div class="photo">
+          <img src="./img/mmbathroom.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- dark arts section -->
+
+    <div class="darkarts-container" id="darkArts">
+      <div class="text-wrapper">
+        <h1>Dark Arts</h1>
+        <p>
+          The Dark Arts were pragmatic in nature, where every time a branch was defeated, it only came back "fiercer and cleverer" than before. It is therefore imperative that one's defences had to be as versatile as these arts themselves.
+          <br><br>
+          Powerful dark spells also required malicious intent in order to be successful. To cast the Cruciatus Curse, for instance, one had to truly desire to cause pain in and of itself. The Dark Arts could also be difficult to control; for example, Vincent Crabbe lost control of the cursed fire he created in 1998 during the Battle of Hogwarts and was killed by it. Injuries caused by dark magic sometimes never fully healed.
+          <br><br>
+          Dark charms could be classified into three groups: jinxes, hexes, and curses. These groups form a hierarchy, with jinxes at the base, hexes in-between, and curses at the top. The further one ascended up this hierarchy, the more wicked, the stronger, the longer-lasting and the less reversible the Dark spell's effects appeared to be. The Unforgivable Curses were the strongest known Dark spells in existence, as their effects were very powerful and their use required skill. 
+          <br><br>
+          Other dark spells could be used not physically on their intended targets, but could cause great harm to them nonetheless. The Taboo was a jinx that allowed the caster to track anyone who said a certain word or name. This gave the caster a great deal of power over people's speech, which spread great fear. It was notably used by Death Eaters to track their enemies during the Second Wizarding War, when they made name "Voldemort" taboo. Lord Voldemort himself placed a powerful jinx on the position of the Hogwarts Defence Against the Dark Arts teacher in revenge after he was refused the position himself, which resulted in every hired teacher of this subject being forced out of their job at the end of each school year, in various unfortunate circumstances.
+        </p>
+      </div>
+
+      <div class="dark-photo-wrapper">
+        <img src="./img/dark-lord.png" alt="">
+      </div>
+    </div>
+
+    <!-- about dark mark section -->
+
+    <div class="about-container" id="aboutDarkMark">
+      <i class="bx bxs-chevrons-up up-icon" id="up-icon"></i>
+      <h1>About Dark Mark</h1>
+      <div class="about-wrapper">
+        <div class="mark-photo">
+          <img src="./img/darkmark.jpg" alt="">
+        </div>
+        <p>The Dark Mark was the symbol of Lord Voldemort and his Death Eaters. It refers both to a magically induced brand that every Death Eater bore on his or her inner left forearm, and to the same symbol summoned in the sky by the spell Morsmordre.
+        <br><br>
+        The Dark Mark appeared as a glittering green skull with a snake protruding from its mouth. This might have been inspired by the hiding place of the Basilisk in the Chamber of Secrets. When summoned, the basilisk would emerge from the mouth of the statue of Salazar Slytherin. The serpent was also the symbol of Slytherin house, and thus appropriate to be used by the Heir of Slytherin.
+        <br><br>
+        The symbol might also have been related to Lord Voldemort being a Parselmouth, a gift he thought made him unlike the rest of the wizarding world. The Dark Mark on the forearm was black, while the Dark Mark conjured by Morsmordre was green; this was most likely for more contrast with each respective background as a black Dark Mark would be hard to see in the night sky. It was also said that the Dark Mark represented immortality and power.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <span class="quote">"There is no good and evil. There is only power… and those too weak to seek it."</span>
+      <span class="copyright">© 2023 designed by Elsie</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

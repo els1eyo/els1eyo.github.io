@@ -1,0 +1,359 @@
+:root {
+  --darkgreen: #1a472a;
+  --green: #2a623d;
+  --grey: #5d5d5d;
+  --silver: #aaaaaa;
+  --darkgrey: #292929;
+  --red: #d93025;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* navigation, header */
+
+.navbar {
+  height: 70px;
+  position: fixed;
+  background: #000;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 1px solid var(--green);
+  padding-right: 50px
+}
+
+.light-mode .navbar{
+  background-color: var(--darkgrey);
+}
+
+.logo {
+  max-width: 200px;
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-grow: 1;
+}
+
+.logo img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.switch-icon{
+  color: var(--silver);
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.navmenu{
+  padding-right: 50px;
+}
+
+.light-mode .navmenu{
+  background-color: var(--darkgrey);
+}
+
+.navmenu li {
+  float: left;
+  margin-right: 50px;
+  list-style: none;
+}
+
+.navmenu a {
+  text-decoration: none;
+  color: var(--silver);
+  font-weight: 600;
+}
+
+.navmenu a:hover {
+  color: var(--green);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.hamburger,
+.close-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 2rem;
+  color: var(--green);
+}
+
+.header {
+  height: 100vh;
+  background-image: url(./img/deatheaters.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* sign up form */
+
+.form-container {
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 50px 0 50px;
+}
+
+.light-mode .form-container{
+  background-color: var(--grey);
+}
+
+.form{
+  background-color: var(--silver);
+  padding: 20px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.light-mode .form{
+  background-color: var(--darkgrey);
+}
+
+.form h2{
+  color: var(--darkgreen);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.light-mode .form h2{
+  color: var(--silver);
+}
+
+.input-field,
+.error{
+  position: relative;
+  height: 40px;
+}
+
+.input-field input{
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+}
+
+.user-icon,
+.email-icon,
+.password-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  color: var(--grey);
+}
+
+.error{
+  align-items: center;
+  color: var(--red);
+  font-size: 16px;
+  display: flex;
+}
+
+.error-message{
+  padding-left: 10px;
+  visibility: hidden;
+}
+
+button{
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--darkgreen);
+  color: var(--silver);
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* malfoy manor section*/
+
+.manor-container{
+  height: 100vh;
+  background-color: #000;
+  padding: 80px 50px 0 50px;
+}
+
+.light-mode .manor-container{
+  background-color: var(--grey);
+}
+
+.text-wrapper h1,
+.text-wrapper p{
+  color: var(--silver);
+}
+
+.light-mode .text-wrapper h1,
+.light-mode .text-wrapper p{
+  color: #fff;
+}
+
+.text-wrapper h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-wrapper p{
+  text-align: justify;
+}
+
+.manor-photos-wrapper{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.manor-photos-wrapper .photo{
+  width: 23vw;
+}
+
+.manor-photos-wrapper .photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.manor-photos-wrapper .photo img:hover{
+  transform: scale(1.05);
+}
+
+/* dark arts section */
+
+.darkarts-container{
+  height: 100vh;
+  background-color: #000;
+  padding: 80px 50px 0 50px;
+}
+
+.light-mode .darkarts-container{
+  background-color: var(--grey);
+}
+
+.dark-photo-wrapper{
+  height: 140px;
+  padding-top: 20px;
+}
+
+.dark-photo-wrapper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* about dark mark section */
+
+.about-container{
+  height: 100vh;
+  background-color: #000;
+  padding: 80px 50px 50px 50px;
+  position: relative;
+}
+
+.light-mode .about-container{
+  background-color: var(--grey);
+}
+
+.about-wrapper{
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+.mark-photo{
+  width: calc(50% - 135px);
+  height: 60vh;
+}
+
+.mark-photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.mark-photo img:hover{
+  transform: scale(1.05);
+}
+
+.about-container h1,
+.about-wrapper p{
+  color: var(--silver);
+}
+
+.light-mode .about-container h1,
+.light-mode .about-wrapper p{
+  color: #fff;
+}
+
+.about-container h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-wrapper p{
+  text-align: justify;
+  width: calc(50% + 135px);
+}
+
+.up-icon{
+  position: absolute;
+  color: var(--silver);
+  opacity: 80%;
+  font-size: 56px;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+
+/* footer */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: var(--darkgreen);
+}
+
+footer .quote{
+  font-weight: 600;
+  text-align: center;
+}
+
+footer .copyright{
+  font-size: 14px;
+}
+
+
+
+
