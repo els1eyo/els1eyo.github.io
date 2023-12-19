@@ -143,10 +143,13 @@
   color: var(--silver);
 }
 
-.input-field,
+.input-field{
+  position: relative;
+  height: 45px;
+}
 .error{
   position: relative;
-  height: 40px;
+  height: 55px;
 }
 
 .input-field input{
